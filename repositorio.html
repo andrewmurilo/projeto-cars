@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Formulário de Interesse - Site de Carros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .form-container {
+            background: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #555;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 6px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        button {
+            margin-top: 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulário de Interesse - Carros</h2>
+        <form action="#" method="POST">
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required />
+
+            <label for="modelo">Modelo do carro:</label>
+            <select id="modelo" name="modelo" required>
+                <option value="">Selecione o modelo</option>
+                <option value="sedan">Sedan</option>
+                <option value="hatch">Hatch</option>
+                <option value="suv">SUV</option>
+                <option value="pickup">Pickup</option>
+                <option value="esportivo">Esportivo</option>
+            </select>
+
+            <label for="ano">Ano do carro:</label>
+            <input type="number" id="ano" name="ano" min="1990" max="2025" placeholder="Ex: 2023" required />
+
+            <label for="cor">Cor preferida:</label>
+            <input type="text" id="cor" name="cor" placeholder="Ex: Preto, Branco, Azul" />
+
+            <label for="mensagem">Mensagem / Comentários:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Deixe seu comentário aqui..."></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
